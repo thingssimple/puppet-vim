@@ -11,4 +11,19 @@ class vim::vundle {
   repository { "${home}/.vim/bundle/Vundle.vim":
     source => "VundleVim/Vundle.vim"
   }
+
+  file_line {
+    path => "${home}/.vimrc",
+    line => "set rtp+=~/.vim/bundle/Vundle.vim"
+  }
+
+  file_line {
+    path => "${home}/.vimrc",
+    line => "call vundle#begin()"
+  }
+
+  file_line {
+    path => "${home}/.vimrc",
+    line => "call vundle#end()"
+  }
 }
