@@ -1,3 +1,7 @@
+include homebrew
+
 class vim {
-  anchor { 'Hello_World': }
+  package { 'vim':
+    ensure => present
+  }
 }
