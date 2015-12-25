@@ -1,4 +1,3 @@
-# This is a placeholder class.
-class template {
+class vim {
   anchor { 'Hello_World': }
 }
