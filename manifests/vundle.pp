@@ -8,6 +8,10 @@ class vim::vundle {
     ensure => directory
   }
 
+  file { "${home}/.vimrc":
+    ensure => present
+  }
+
   repository { "${home}/.vim/bundle/Vundle.vim":
     source => "VundleVim/Vundle.vim"
   }
