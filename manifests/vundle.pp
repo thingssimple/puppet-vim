@@ -26,4 +26,6 @@ class vim::vundle {
     path => "${home}/.vimrc",
     line => "call vundle#end()"
   }
+
+  exec { "vim +PluginInstall +qall": }
 }
